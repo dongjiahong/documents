@@ -1,0 +1,5 @@
+1、debian的配置可以参考这篇博客，里面的打显卡驱动的方法都是可行的http://my.oschina.net/qxa1982/blog/215587?fromerr=puKMfOXT
+2、目前pc用的是RT2070的无线网卡，默认是无法支持的，需要自己安装驱动：可以去下载下面两个文件：
+	firmware-ralink_0.36+wheezy.1_all.deb
+	wireless-tools_30~pre9-8_amd64.deb
+	然后使用:dpkg -i wireless-tools_30~pre9-8_amd64.deb 和 dpkg -i firmware-ralink_0.36+wheezy.1_all.deb 来安装，以后就能链接无线了

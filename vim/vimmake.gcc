@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -std=c++11 -Wall "$VIM_FILEDIR/$VIM_FILENOEXT$VIM_FILEEXT" -o "$VIM_FILEDIR/$VIM_FILENOEXT"
