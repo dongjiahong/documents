@@ -2,5 +2,5 @@
 
 ## FFmpeg 教程
 
-* [ffmpeg使用示例](ffmpeg_eg.md)
+* [ffmpeg使用示例](ffmpeg/ffmpeg_eg.md)
 
