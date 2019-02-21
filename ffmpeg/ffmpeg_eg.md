@@ -73,4 +73,21 @@ ffmpeg -i input.gif -vf scale=420:-2,format=yuv420p out.mp4
 ```
 
 使用 yunv420p 需要保证长宽为偶数，这里同时使用了 scale=420:-2 。
-== 解释： QuickTime Player 对 H.264 视频只支持 YUV 色域 4:2:0 方式的二次插值算法。==
+
+**解释： QuickTime Player 对 H.264 视频只支持 YUV 色域 4:2:0 方式的二次插值算法.**
+
+### 给视频或图片加内边距
+
+```
+ffmpeg -i 01.mp4 -vf pad=440:256:30:30:pink 010.mp4
+```
+
+### 视频比例转化
+
+如果不给color的话。默认将会是黑色的背景,将画面从4：3 切换成16：9
+
+```
+ffmpeg -i input -vf pad=ih*16/9:ih:(ow-iw)/2:0:color output
+# 16:9 转换成 4：3
+ffmpeg -i input -vf pad=iw:iw*3/4:0:(oh-ih)/2:color output
+```
