@@ -6,6 +6,8 @@
 
 [ffmpeg基础教程2](https://github.com/feixiao/ffmpeg)
 
+[ffmpeg basics中文版](https://www.jianshu.com/p/5baf47e7c4cb)
+
 # FFmpeg 基础知识
 
 #### 基础术语
